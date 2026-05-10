@@ -1,55 +1,59 @@
-/////////////////////////////////////////////////////////////////////////////////
-//  Application to perform addition of 2 floats 
+///////////////////////////////////////////////////////
 //
-//////////////////////////////////////////////////////////////////////////////////
+//  Include required header files
+//
+///////////////////////////////////////////////////////
 #include<stdio.h>
 
-// / ///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
 //
-//  Function Name :     AddTwoNumbers
-//   Input :            float, float
-//   Output :           float
-//   Description :      Performs addition of  2 floats
-//   Date :             08/05/2026
-//  Author :            Vedant Gade
-//  
-/////////////////////////////////////////////////////////////////////////////   
+//  Function name : AddTwoNumbers
+//  Input :         float, float
+//  Ouput :         float
+//  Description :   Performs addition of 2 floats
+//  Date :          08/05/2026
+//  Author :        Piyush Manohar Khairnar
+//
+///////////////////////////////////////////////////////
 
-float AddTwoNumbers (
-                     float fNo1,         //First input
-                     float fNo2        //Second input
-                    )
+float AddTwoNumbers(
+                        float fNo1,         // First input
+                        float fNo2          // Second input
+                   )
 {
-    float fAns = 0.0f;
-    fAns = fNo1 + fNo2;
-    return fAns;                       //Variable to store the result
+    float fAns = 0.0f;                      // Variable to store result
+    fAns = fNo1 + fNo2;                     // Perform Addition
+    return fAns;
 }
 
-/////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
 //
-//  Application to perform addition of 2 floats 
+//  Applition to perform Addition of 2 float values
 //
-////////////////////////////////////////////////////////////////////////////////    
+///////////////////////////////////////////////////////
+
 int main()
 {
-    float fValue1 = 0.0f;                  // To Store the first input
-    float fValue2 = 0.0f;                  // To Store the second input
-    float fResult = 0.0f;                 // To Store the result of addition
-    
-     printf("Enter first number:\n");
-     scanf("%f",&fValue1);
-    
-     printf("Enter Second Number:\n");
-     scanf("%f",&fValue2);
-    
-     fResult = AddTwoNumbers(fValue1,fValue2);   // Perform the addition 
-     printf("Addition is : %f\n",fResult);
-    
-        return 0;
+    float fValue1 = 0.0f;                    // To store first input
+    float fValue2 = 0.0f;                    // To store second input
+    float fResult = 0.0f;                    // To store the result
+
+    printf("Enter first number : \n");
+    scanf("%f",&fValue1);
+
+    printf("Enter second number : \n");
+    scanf("%f",&fValue2);
+
+    fResult = AddTwoNumbers(fValue1 , fValue2); 
+
+    printf("Addition is : %f\n",fResult);
+
+    return 0;
 }
 
-/////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////
 //
-//  Input :            10.5 20.5
-//  Output :           31.000000
-/////////////////////////////////////////////////////////////////////////////////
+//  Input :     10.0    11.0
+//  Output :    21.0
+//
+///////////////////////////////////////////////////////
